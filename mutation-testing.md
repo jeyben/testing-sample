@@ -5,7 +5,7 @@ An unsuccessful mutation test, is when a mutation of the code isn't failing any 
 What mutation testing helps to conclude is:
 * That the code is running during test execution.
 * That testcases have assertions to the business requirements
-* Good chance that unexpected changes to the code will be detected before it reaches production.
+* A chance (_not guaranteed_) that unexpected changes to the code will be detected before it reaches production.
 
 What it **doesn't** conclude is:
 * That the code meets the business requirements.
