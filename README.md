@@ -18,20 +18,19 @@ You can see some thoughts and pre calculated reports for the code coverage and m
 Even though we can achieve 100% line coverage and 100% mutation coverage, we still haven´t found some of the implementation errors in the businesslogic.
 
 These two testcases will both break and reveal the implementation is not completely correct and fault tolerant.   
-The point is, that now metric would enforce the real interesting testcases to be created
+The point is, that no metric would enforce these testcases to be created.
 - [testAdd_Assertions_3](/src/test/java/com/eybenconsult/testing/sample/LogicServiceTest.java#L51)
 - [testAdd_Assertions_4](/src/test/java/com/eybenconsult/testing/sample/LogicServiceTest.java#L61)
 
 ## Conclusion
-This project and the simple testcases, shows how we achieve 100% line coverage and also 100% mutation coverage, but still fail the requirements.  
+This project and the simple testcases, shows how we can achieve 100% line coverage and also 100% mutation coverage, but still fail the requirements.  
 Hence one should be **very careful** when using code coverage and mutation testing as key metric for measuring the quality of any code.  
 As they tend to give a false sense of security.
 
-### Suggestion 
-
+### Suggestion
 As it is absolutely **not cost-free** to write and maintain a test suite, consider approaching the test coverage with the following questions.
 
-* What is the changes of this part of the code will break? *examples*
+* What is the chances of this part of the code will break? *examples*
   * does it depend on third-party services or libraries? (maybe http services, that could be down) 
   * is it subject to frequent changes in requirements or business rules? 
   * is it inherently complex (e.g., heavy concurrency or tricky algorithms)?
