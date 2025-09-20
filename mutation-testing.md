@@ -45,7 +45,6 @@ This test will provide 100% line coverage, but show that nothing was detected du
  * still let the test survive.
  */
 @Test
-@Disabled
 void testAdd_Assertions_1() {
   Assertions.assertEquals(4000, logic.addLarge(2000, 1000, 1000));
   Assertions.assertEquals(0, logic.addLarge(1, 1, 1));
@@ -53,3 +52,19 @@ void testAdd_Assertions_1() {
 ```
 **Report**  
 ![Mutation coverage with incomplete assertions](/report-images/test_assertions_mutation_coverage_failing.png)
+
+### Example 3
+**code**  
+This test will provide 100% line coverage, but show that nothing was detected during the mutation tests:
+``` java
+/**
+ * Will provide 100% line coverage, and 100% mutation coverage, but still lack the assertion that shows
+ * the implementation error around b == 1000 in the logic service.
+ */
+@Test
+void testAdd_Assertions_2() {
+  Assertions.assertEquals(3000, logic.addLarge(1000, 1000, 1000));
+}
+```
+**Report**  
+![Mutation coverage with false ok assertions](/report-images/test_assertions_mutation_coverage_ok.png)
