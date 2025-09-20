@@ -2,8 +2,6 @@
 Works by introducing mutations to the production code, to see if any of the already writting testcases will detect the mutation, by failing the testcase.  
 An unsuccessful mutation test, is when a mutation of the code isn't failing any testcase.
 
-I believe that mutation testing is a slightly better way of measuring test quality than code coverage.
-
 What mutation testing helps to conclude is:
 * That the code is running during test execution.
 * That testcases have assertions to the business requirements
