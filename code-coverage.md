@@ -2,7 +2,7 @@
 By running a test without a single assertion, we can still achieve 100% line coverage.
 That leads to a very false sense of security.
 
-What code coverage actually concludes is:
+What code coverage helps to conclude is:
 * That the code is running during test execution.
 
 What it **doesn't** conclude is:

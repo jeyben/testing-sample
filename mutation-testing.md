@@ -4,7 +4,7 @@ An unsuccessful mutation test, is when a mutation of the code isn't failing any 
 
 I believe that mutation testing is a slightly better way of measuring test quality than code coverage.
 
-What mutation testing actually concludes is:
+What mutation testing helps to conclude is:
 * That the code is running during test execution.
 * That testcases have assertions to the business requirements
 * Good chance that unexpected changes to the code will be detected before it reaches production.
