@@ -36,7 +36,7 @@ void testAdd_NoAssertions() {
 
 ### Example 2
 **code**  
-This test will provide 100% line coverage, but show that nothing was detected during the mutation tests:
+This test will provide 100% line coverage, but show that it weak when mutating a certain line of code:
 ``` java
 /**
  * Will provide 100% line coverage, but not 100% mutation coverage, as mutations around the if statements will
