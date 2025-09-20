@@ -19,7 +19,7 @@ What it **doesn't** conclude is:
 * That the code is resilient.
 * ...
 
-### Example 1
+### Example 1 - detects no assertions
 **code**  
 ``` java
 /**
@@ -34,7 +34,7 @@ void testAdd_NoAssertions() {
 **Report**  
 ![Mutation coverage with no assertions](/report-images/test_noassertions_mutation_coverage.png)
 
-### Example 2
+### Example 2 - detects weakness around an assertion
 **code**  
 This test will provide 100% line coverage, but show that it weak when mutating a certain line of code:
 ``` java
@@ -51,7 +51,7 @@ void testAdd_Assertions_1() {
 **Report**  
 ![Mutation coverage with incomplete assertions](/report-images/test_assertions_mutation_coverage_failing.png)
 
-### Example 3
+### Example 3 - shows (wrongfully) no weakness around an assertion
 **code**  
 This test will provide 100% line coverage, but show that nothing was detected during the mutation tests:
 ``` java
